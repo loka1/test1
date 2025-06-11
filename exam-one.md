@@ -1,5 +1,5 @@
-1. Write what you know about:
-1) Difference between internet and Web.
+# Write what you know about:
+## Difference between internet and Web.
 Answer: The internet is the global network infrastructure that connects millions of private, public, academic, business, and government networks, while the web (World Wide Web) is an information system that operates over the internet using HTTP/HTTPS protocols.
 - The internet provides the foundational network infrastructure including physical cables, routers, switches, and servers
 - The web is an application layer service that uses browsers to access interconnected documents via URLs and hyperlinks
@@ -15,7 +15,7 @@ Answer: The internet is the global network infrastructure that connects millions
 - البروتوكولات الرئيسية: TCP/IP للاتصال بالإنترنت، HTTP/HTTPS للويب، DNS لحل العناوين
 - التطور التاريخي: ARPANET (1969)، توحيد TCP/IP (1983)، اختراع الويب (1989 بواسطة تيم بيرنرز لي)
 
-3) Elements of web design.
+## Elements of web design.
 Answer: Effective web design combines visual aesthetics with functional elements to create optimal user experiences across devices.
 Visual Design Elements:
 - Layout and structure using grid systems and visual hierarchy principles
@@ -55,7 +55,7 @@ Design Process:
 - إنشاء الإطارات السلكية والنماذج الأولية
 - اختبار المستخدم والتكرار
 
-2) Types of Physical Topologies.
+## Types of Physical Topologies.
 Answer: Network topologies define the physical or logical arrangement of nodes in a network, each with specific characteristics and use cases.
 Common Topologies:
 1. Bus Topology:
@@ -119,7 +119,7 @@ Emerging Trends:
 - طوبولوجيات افتراضية قائمة على السحابة
 - أساليب هجينة تجمع بين طوبولوجيات متعددة
 
-5) Difference between Web Designer and Web Developer.
+## Difference between Web Designer and Web Developer.
 Answer: These roles have complementary but distinct responsibilities in creating websites and applications.
 Web Designer Responsibilities:
 - Focus on user interface (UI) and user experience (UX)
@@ -163,7 +163,7 @@ Career Paths:
 - مطور Full-stack
 - مهندس تجربة مستخدم (دور هجين)
 
-4) Security Misconfiguration.
+## Security Misconfiguration.
 Answer: Security misconfigurations are among the most common vulnerabilities that attackers exploit in web applications.
 Common Issues:
 - Default credentials and configurations
@@ -217,7 +217,7 @@ Best Practices:
 - تنفيذ تسجيل ومراقبة مناسبة
 - تدريب أمني دوري للموظفين
 
-II. Draw a table and write the number of the statement and its answer true (T) or false (F).
+##  Draw a table and write the number of the statement and its answer true (T) or false (F).
 1) Data unit is a general term for data in all layers of the network.
 (وحدة البيانات هو مصطلح عام للبيانات في جميع طبقات الشبكة)
 Answer: False - Each layer has specific terms (frames, packets, segments)

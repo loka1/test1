@@ -1,5 +1,5 @@
-1. Write what you know about:
-1) Types of networks according to engineering design.
+# Write what you know about:
+## Types of networks according to engineering design.
 Answer: Network engineering designs are categorized based on their physical and logical connection patterns.
 Bus Topology:
 - Single backbone cable with terminators
@@ -37,7 +37,7 @@ Emerging Designs:
 - طوبولوجيات قائمة على السحابة
 - أساليب هجينة
 
-3) Comparison of Webl, Web2. Web3.
+## Comparison of Webl, Web2. Web3.
 Answer: The evolution of web technologies represents fundamental shifts in architecture and philosophy.
 Web1 (1990-2004):
 - Static HTML pages
@@ -75,7 +75,7 @@ Key Differences:
 - آليات الثقة
 - هياكل اقتصادية
 
-5) Applications of internet.
+## Applications of internet.
 Answer: Internet applications span multiple domains and industries.
 Communication:
 - Email, messaging, VoIP
@@ -113,7 +113,7 @@ Security Considerations:
 - المصادقة
 - جدران الحماية
 
-(2) Network layers.
+## Network layers.
 Answer: Network protocols are organized in layered architectures.
 OSI Model (7 Layers):
 1. Physical - Cables, signals
@@ -154,7 +154,7 @@ Key Protocols:
 - DHCP
 
 
-II. Draw a table and write the number of the statement and its answer true (T) or false (F).
+# Draw a table and write the number of the statement and its answer true (T) or false (F).
 1) Data unit is a general term for data in all layers of the network.
 (وحدة البيانات هو مصطلح عام للبيانات في جميع طبقات الشبكة)
 Answer: False - Each layer has specific terms (bits, frames, packets, segments)

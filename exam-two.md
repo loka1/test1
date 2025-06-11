@@ -1,5 +1,5 @@
-1. Write what you know about:
-1) Internet services.
+# Write what you know about:
+## Internet services.
 Answer: Internet services encompass a wide range of applications and protocols that facilitate communication and data exchange across networks.
 - Core Services:
   * Email (SMTP/POP3/IMAP) - Electronic messaging system
@@ -31,7 +31,7 @@ Answer: Internet services encompass a wide range of applications and protocols t
   * عقد البلوكشين
   * الحوسبة الطرفية
 
-2) Types of Physical Network Topologies
+## Types of Physical Network Topologies
 Answer: Network topologies define how devices are interconnected physically or logically.
 Bus Topology:
 - Single communication backbone
@@ -69,7 +69,7 @@ Hybrid Topologies:
 - توازن بين التكلفة والأداء
 - شائعة في شبكات المؤسسات
 
-3) The Fundamentals of web page
+## The Fundamentals of web page
 Answer: Modern web pages combine several core technologies for content delivery.
 Structural Layer:
 - HTML5 markup
@@ -107,7 +107,7 @@ Performance Considerations:
 - تحميل كسول
 - استراتيجيات التخزين المؤقت
 
-4) Common Security Misconfiguration
+## Common Security Misconfiguration
 Answer: Security misconfigurations remain a top vulnerability according to OWASP.
 Server-Level Issues:
 - Default credentials
@@ -145,7 +145,7 @@ Emerging Threats:
 - أخطاء تكوين الحاويات
 - ثغرات تخزين السحابة
 
-5) Difference between Web Designer and Web Developer.
+## Difference between Web Designer and Web Developer.
 Answer: These roles collaborate but focus on different aspects of web creation.
 Designer Responsibilities:
 - UI/UX design
@@ -184,7 +184,7 @@ Career Paths:
 - القيادة الفنية
 
 
-II. Draw a table and write the number of the statement and its answer true (T) or false (F).
+# Draw a table and write the number of the statement and its answer true (T) or false (F).
 1) There is no difference between the internet and the web.
 (لا يوجد فرق بين الإنترنت والويب)
 Answer: False - Internet is infrastructure, web is a service using HTTP/HTTPS
