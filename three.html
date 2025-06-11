@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himit 2023</title>
+    <!-- Link to the external CSS file -->
+    <link id="stylesheet" rel="stylesheet" href="/project/himit.css">
+</head>
+<body id="page-body">
+
+    <!-- Main container for the content -->
+    <div id="main-container">
+        
+        <header id="page-header">
+            <h1 id="main-title">Web Programming</h1>
+            <p id="subtitle">Please Enter Your Information</p>
+        </header>
+
+        <!-- Form for user input, submits data to a PHP file -->
+        <form id="info-form" action="print_info.php" method="post">
+            <div id="form-grid">
+                <div id="input-group-1" class="input-pair">
+                    <label id="label-firstname" for="first-name">First Name</label>
+                    <input id="first-name" type="text" name="first_name">
+                </div>
+                <div id="input-group-2" class="input-pair">
+                    <label id="label-lastname" for="last-name">Last Name</label>
+                    <input id="last-name" type="text" name="last_name">
+                </div>
+                <div id="input-group-3" class="input-pair">
+                    <label id="label-birthdate" for="birthdate">Birthdate</label>
+                    <input id="birthdate" type="text" name="birthdate">
+                </div>
+                <div id="input-group-4" class="input-pair">
+                    <label id="label-address" for="address">Address</label>
+                    <input id="address" type="text" name="address">
+                </div>
+            </div>
+
+            <!-- Container for the action buttons -->
+            <div id="button-container">
+                <!-- The 'Print' button submits the form -->
+                <button id="print-button" type="submit" class="btn">Print</button>
+                <!-- This button triggers a JavaScript message -->
+                <button id="follow-button" type="button" class="btn" onclick="showMessage()">Follow Us</button>
+                <!-- This button triggers a JavaScript function to close the page -->
+                <button id="exit-button" type="button" class="btn" onclick="closePage()">Exit</button>
+            </div>
+        </form>
+
+        <!-- Page footer -->
+        <footer id="page-footer">
+            <p id="date-display">
+                <!-- PHP code to display the current date -->
+                <?php
+                    echo "Current Date: " . date("j M Y");
+                ?>
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript functions -->
+    <script id="page-script">
+        // JS function to show a message
+        function showMessage() {
+            // Using a custom modal/div for the message instead of alert()
+            const messageBox = document.createElement('div');
+            messageBox.id = 'message-box';
+            messageBox.textContent = 'web programming';
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = 'Close';
+            closeBtn.onclick = () => document.body.removeChild(messageBox);
+            // Basic styling for the message box
+            messageBox.style.position = 'fixed';
+            messageBox.style.top = '50%';
+            messageBox.style.left = '50%';
+            messageBox.style.transform = 'translate(-50%, -50%)';
+            messageBox.style.padding = '30px';
+            messageBox.style.backgroundColor = 'white';
+            messageBox.style.border = '2px solid black';
+            messageBox.style.borderRadius = '10px';
+            messageBox.style.zIndex = '1000';
+            closeBtn.style.display = 'block';
+            closeBtn.style.margin = '15px auto 0';
+            
+            messageBox.appendChild(closeBtn);
+            document.body.appendChild(messageBox);
+        }
+
+        // JS function to close the page
+        function closePage() {
+            // Note: This might not work in all modern browsers due to security restrictions.
+            // It's generally used for windows opened by script.
+            window.close();
+        }
+    </script>
+
+</body>
+</html>

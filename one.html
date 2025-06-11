@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming</title>
+    <!-- Google Fonts for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            background-color: #e0e2e8; /* A light grey background to make the component pop */
+            font-family: 'Inter', sans-serif; /* Using a clean, modern font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        /* The main container for the entire component */
+        .container {
+            border: 2px solid #333;
+            border-radius: 12px;
+            padding: 16px;
+            background-color: #ffffff; /* White background for the content area */
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* Space between header, table, and footer */
+        }
+
+        /* Header section containing the title and change link */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #333;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background-color: #f8f9fa; /* Very light grey for the header */
+        }
+
+        .title {
+            font-weight: 700; /* Bold title */
+            font-size: 1.25rem;
+            color: #1a1a1a;
+        }
+
+        .change-link {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .change-link:hover {
+            color: #000;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Ensures borders are clean and single-lined */
+            border: 2px solid #333;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        /* Table header specific styling */
+        thead {
+            background-color: #f1f3f5; /* Light grey for the header row */
+        }
+
+        th {
+            font-weight: 700; /* Bold table headers */
+            color: #333;
+        }
+
+        /* Table body specific styling */
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa; /* Zebra-striping for readability */
+        }
+
+        td {
+            color: #444;
+        }
+
+        /* Footer section for the action buttons */
+        .footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        /* General button styling */
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid #333;
+            background-color: #f1f3f5;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Special styling for the 'Print' button */
+        .btn-print {
+            background-color: #495057; /* Darker background */
+            color: #ffffff; /* White text */
+            font-weight: 700;
+            border-color: #343a40;
+        }
+        
+        .btn-print:hover {
+            background-color: #343a40;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main container for the component -->
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header class="header">
+            <div class="title">Web Programming</div>
+            <a href="#" class="change-link">Change</a>
+        </header>
+        
+        <!-- Data Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Number of Words</th>
+                    <th>Number of Letters</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Ali Mohamed</td>
+                    <td>2</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Mostafa Mahmoud</td>
+                    <td>2</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Reham M...</td>
+                    <td>2</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>1004</td>
+                    <td>Ghada Mohamed</td>
+                    <td>2</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>1005</td>
+                    <td>Mona Adel Youssry</td>
+                    <td>3</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>1006</td>
+                    <td>Yara Ahmed Ali Yaser</td>
+                    <td>4</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer Section with Buttons -->
+        <footer class="footer">
+            <button class="btn">Notify</button>
+            <button class="btn">Follow US</button>
+            <button class="btn btn-print">Print</button>
+        </footer>
+
+    </div>
+
+</body>
+</html>
